@@ -1,0 +1,450 @@
+nav {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+nav a.router-link-exact-active {
+  color: white;
+  background: crimson;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+  font-weight: bold;
+  color: #ff0149;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.post {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post p {
+  color: #444;
+  line-height: 1.5rem;
+  margin-top: 40px;
+}
+
+.pre {
+  white-space: pre-wrap;
+} 
+.li-img {
+  grid-column-start: 1;
+  grid-column: span 2;
+}
+
+@media (max-width: 1270px) {
+  header {
+    font-size: 14px;
+  }
+  .insideheader {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .sectionPost {
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 13px;
+  }
+  .images {
+    width: 76px;
+  }
+  .listitem div span {
+    grid-column: span 4;
+  }
+  .date {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .listitembtn {
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+    grid-column-start: 11;
+  }
+  .listitembtn button {
+    font-size: 12px;
+  }
+  .unorderlist {
+    grid-template-columns: repeat(20, minmax(0, 0.11fr));
+  }
+}
+@media (max-width: 1027px) {
+  header {
+    font-size: 14px;
+  }
+  .insideheader {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sectionPost {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+  .images {
+    width: 76px;
+  }
+  .listitem div span {
+    grid-column: span 4;
+  }
+  .date {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  .listitembtn {
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+    grid-column-start: 9;
+  }
+  .listitembtn button {
+    font-size: 12px;
+  }
+  .unorderlist {
+    grid-template-columns: repeat(18, minmax(0, 0.9fr));
+  }
+}
+@media (max-width: 770px) {
+  header {
+    font-size: 14px;
+  }
+  .insideheader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sectionPost {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 13px;
+  }
+  .responsiv {
+    font-size: 12px;
+    width: 100px;
+  }
+  .images {
+    width: 56px;
+  }
+  .new, .featured {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+  }
+  .listitem div span {
+    grid-column-start: 1;
+  }
+  .date {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .listitembtn {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    grid-column-start: 8;
+  }
+  .listitembtn button {
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .unorderlist {
+    grid-template-columns: repeat(12, minmax(0, 0.8fr));
+    align-items: center;
+  }
+}
+@media (max-width: 660px) {
+  header {
+    font-size: 14px;
+  }
+  .insideheader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sectionPost {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 13px;
+  }
+  .responsiv {
+    font-size: 12px;
+    width: 100px;
+  }
+  .images {
+    width: 56px;
+    grid-column: span 1;
+  }
+  .new, .featured {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+  }
+  .listitem {
+    margin-left: 10px;
+    grid-column-start: 1;
+    grid-column: span 4;
+  }
+  .date {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    font-size: 10px;
+  }
+  .date div {
+    width: 2px;
+    height: 2px;
+    margin-top: 4px;
+  }
+  .listitembtn {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    grid-column-start: 7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+  }
+  .listitembtn button {
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .unorderlist {
+    grid-template-columns: repeat(11, minmax(0, 0.7fr));
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 435px) {
+  header {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .insideheader {
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 100px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  .insideheader div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    height: 120px;
+    text-align: center;
+  }
+  .insideheader div div {
+    height: 30px;
+    text-align: center;
+    width: 100px;
+  }
+  .responsiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .responsiv span {
+    font-size: 13px;
+    display: flex;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  .sectionPost {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 150px;
+    font-size: 13px;
+  }
+  .responsiv {
+    font-size: 12px;
+    width: 100px;
+  }
+  .images {
+    width: 56px;
+    position: relative;
+    left: 100;
+  }
+  .imagelist {
+    position: absolute;
+    margin-top: -80px;
+  }
+  .new, .featured {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+  }
+  .listitem {
+    margin-left: 10px;
+    grid-column-start: 1;
+    grid-column: span 4;
+  }
+  .date {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    font-size: 10px;
+  }
+  .date div {
+    width: 2px;
+    height: 2px;
+    margin-top: 4px;
+  }
+  .listitembtn {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    grid-column-start: 7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+  }
+  .listitembtn button {
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .unorderlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    padding-top: 55px;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .insideheader {
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 100px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  .insideheader div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    height: 120px;
+    text-align: center;
+  }
+  .insideheader div div {
+    height: 30px;
+    text-align: center;
+    width: 90px;
+    margin-right: 8px;
+  }
+  .responsiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .responsiv span {
+    font-size: 13px;
+    display: flex;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  .textspan {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .sectionPost {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 150px;
+    font-size: 13px;
+  }
+  .responsiv {
+    font-size: 12px;
+    width: 100px;
+  }
+  .images {
+    width: 56px;
+    position: relative;
+    left: 100;
+  }
+  .imagelist {
+    position: absolute;
+    margin-top: -80px;
+  }
+  .new, .featured {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+  }
+  .listitem {
+    margin-left: 10px;
+    grid-column-start: 1;
+    grid-column: span 4;
+  }
+  .date {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    font-size: 10px;
+  }
+  .date div {
+    width: 2px;
+    height: 2px;
+    margin-top: 4px;
+  }
+  .listitembtn {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    grid-column-start: 7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+  }
+  .listitembtn button {
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .unorderlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    padding-top: 55px;
+  }
+}/*# sourceMappingURL=style.css.map */
