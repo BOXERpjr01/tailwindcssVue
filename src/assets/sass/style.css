@@ -405,13 +405,13 @@ nav a {
   }
   .new, .featured {
     font-size: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 2px;
   }
   .listitem {
-    margin-left: 10px;
+    margin-left: 0;
     grid-column-start: 1;
     grid-column: span 4;
   }
@@ -419,6 +419,9 @@ nav a {
     -moz-column-gap: 4px;
          column-gap: 4px;
     font-size: 10px;
+    margin-bottom: 10px;
+    width: 225px;
+    border-bottom: 2px solid rgba(107, 114, 128, 0.55);
   }
   .date div {
     width: 2px;
@@ -443,8 +446,7 @@ nav a {
   .unorderlist {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: start;
     padding-top: 55px;
+    padding-left: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
